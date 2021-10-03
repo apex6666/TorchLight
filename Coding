@@ -1,0 +1,24 @@
+// C++ code
+//
+int buttonPin = 12;
+int LED = 13;
+
+
+void setup()
+{
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(LED, OUTPUT);
+}
+
+void loop()
+{
+int buttonValue = digitalRead(buttonPin);
+  if(buttonValue == LOW){
+  digitalWrite(LED,HIGH);
+   
+    digitalWrite(LED,LOW);
+   
+  }else{
+  digitalWrite(LED,LOW);
+  }
+}
